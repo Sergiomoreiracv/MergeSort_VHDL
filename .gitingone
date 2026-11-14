@@ -1,0 +1,12 @@
+# Arquivos gerados pelo GHDL
+work-obj*.cf
+
+# Arquivos de simulacao
+*.ghw
+*.vcd
+*.fst
+
+# Arquivos temporarios
+*.o
+*.out
+*.exe
