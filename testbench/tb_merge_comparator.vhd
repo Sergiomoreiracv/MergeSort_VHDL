@@ -46,7 +46,7 @@ begin
         data_b <= x"05";
         wait for 10 ns;
 
-        assert a_menor = '0'
+        assert a_menor = '1'
             report "Erro no teste 3"
             severity error;
 
