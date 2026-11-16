@@ -16,7 +16,7 @@ begin
 
     process(data_a, data_b)
     begin
-        if unsigned(data_a) < unsigned(data_b) then
+        if unsigned(data_a) <= unsigned(data_b) then
             a_menor <= '1';
         else
             a_menor <= '0';
