@@ -8,3 +8,10 @@ ghdl -a --std=08 ../src/register_bank.vhd ../src/merge_comparator.vhd \
     ../testbench/tb_merge_sort.vhd || exit 1
 ghdl -e --std=08 tb_merge_sort || exit 1
 ghdl -r --std=08 tb_merge_sort -gNUM_ELEMENTOS=$N --wave=merge_sort.ghw
+
+
+# EXEMPLO DE TESTE COM ARQUIVO SEPARADO:
+# cd build
+# ghdl -a --std=08 ../src/merge_comparator.vhd ../testbench/tb_merge_comparator.vhd
+# ghdl -e --std=08 tb_merge_comparator
+# ghdl -r --std=08 tb_merge_comparator

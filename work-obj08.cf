@@ -1,13 +1,13 @@
 v 4
-file . "testbench/tb_merge_comparator.vhd" "953211db4a8ebc822306b93fec96662b3279f7d9" "20261114141731.937":
-  entity tb_merge_comparator at 2( 1) + 0 on 17;
-  architecture test of tb_merge_comparator at 8( 88) + 0 on 18;
-file . "testbench/tb_register_bank.vhd" "e496ac7a24fb2739d35515acdd10b0c58b967512" "20261114141040.781":
-  entity tb_register_bank at 2( 1) + 0 on 13;
-  architecture test of tb_register_bank at 8( 85) + 0 on 14;
+file . "src/merge_comparator.vhd" "fac096ce206ca0350a445d9a14ed14bddb389b55" "20261117191254.822":
+  entity merge_comparator at 2( 1) + 0 on 19;
+  architecture behavioral of merge_comparator at 14( 261) + 0 on 20;
 file . "src/register_bank.vhd" "d44bc8c170ccf1681df4d365d1d0982de62b884b" "20261114141035.311":
   entity register_bank at 2( 1) + 0 on 11;
   architecture behavioral of register_bank at 29( 693) + 0 on 12;
-file . "src/merge_comparator.vhd" "9f84d2e272b1df698048dea3ae75f4fbe4a908f7" "20261114141727.351":
-  entity merge_comparator at 2( 1) + 0 on 15;
-  architecture behavioral of merge_comparator at 14( 261) + 0 on 16;
+file . "testbench/tb_register_bank.vhd" "e496ac7a24fb2739d35515acdd10b0c58b967512" "20261114141040.781":
+  entity tb_register_bank at 2( 1) + 0 on 13;
+  architecture test of tb_register_bank at 8( 85) + 0 on 14;
+file . "testbench/tb_merge_comparator.vhd" "a4fe8c66a8a087cdf1fb922c6727cb42220775da" "20261117191254.822":
+  entity tb_merge_comparator at 2( 1) + 0 on 21;
+  architecture test of tb_merge_comparator at 8( 88) + 0 on 22;

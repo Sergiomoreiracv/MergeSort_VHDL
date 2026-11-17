@@ -194,7 +194,13 @@ begin
             when PASS =>
                 width_n   <= 2*width;
                 i_n       <= 0;
-                src_sel_n <= not src_sel;
+                -- Com um unico elemento nao houve uma rodada de merge:
+                -- o dado ja esta no banco A e a origem nao deve alternar.
+                if (NUM_ELEMENTOS = 1) then
+                    src_sel_n <= src_sel;
+                else
+                    src_sel_n <= not src_sel;
+                end if;
                 if 2*width >= NUM_ELEMENTOS then
                     next_state <= DONE_ST;
                 else
