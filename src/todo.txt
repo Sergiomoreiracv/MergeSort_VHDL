@@ -1,0 +1,6 @@
+TODO:
+
+merge_choose_x.vhd -> logica de quando escolher a_x
+merge_flags.vhd -> comparadores dos ponteiros
+merge_write_decoder.vhd -> gera we_A e we_B [write_enable] para determinar em quais registradores do banco os dados serao escritos
+merge_fsm.vhd -> maquina de estados
