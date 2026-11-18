@@ -22,7 +22,10 @@ entity register_bank is
         read_add_b : in integer range 0 to NUM_ELEMENTOS;
 
         read_data_a : out std_logic_vector(7 downto 0);
-        read_data_b : out std_logic_vector(7 downto 0)
+        read_data_b : out std_logic_vector(7 downto 0);
+
+        -- para entregar todos
+        data_all : out std_logic_vector(NUM_ELEMENTOS*8 - 1 downto 0)
     );
 end entity;
 
@@ -61,5 +64,10 @@ begin
 
     read_data_b <= registradores(read_add_b)
         when read_add_b < NUM_ELEMENTOS else (others => '0');
+
+            gen_all : for idx in 0 to NUM_ELEMENTOS-1 generate
+        data_all((NUM_ELEMENTOS-idx)*8-1 downto
+                 (NUM_ELEMENTOS-idx-1)*8) <= registradores(idx);
+    end generate;
 
 end architecture;
